@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Accepted Hacks - 6th Named Data Networking (NDN) Hackathon</title>
+    <meta name="description" content="May 12-13, 2018, Florida International University">
+    <meta name="author" content="6th NDN Hackathon Organizing Committee">
+    <link rel="canonical" href="http://6th-ndn-hackathon.named-data.net/hacks">
+
+    <link rel="stylesheet" type="text/css" integrity="sha256-OUAxTLNzpnhBQyCi7SGmqrvXkQ1FWUhN6Cis05MY/Vs=" crossorigin="anonymous" href="/assets/site-3940314cb373a678414320a2ed21a6aabbd7910d4559484de828acd39318fd5b.css">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/ico/favicon-38a0d815005ff0b3d71bae96e5736aaf474efe05b3288d12f6465c38b43aa315.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed-97e5eefed33136b6b7e63bdbdf4957b88045bd96bb9b2cc5a0a8525729ca221f.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed-8603082234efbd8fca0f58505f699a5854a13739f12b87b69143b06a4cccc0c7.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed-a22882427ca6e03081271325bf1294e8cd2ee4c447f635000e4f4a0f694bfe55.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed-933602014f87c50876665303015b7fed8f9dbe32ab7b7b62ebe888e5497dfd43.png">
+
+    
+  </head>
+  <body>
+    <header id="header">
+      <hgroup>
+  <h1 id="site-title">
+    <a class="full" href="/">6th Named Data Networking (NDN) Hackathon</a>
+  </h1>
+
+  <h2 id="site-description">May 12-13, 2018, Florida International University</h2>
+
+</hgroup>
+
+    </header>
+
+    <nav id="navbar">
+      <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+
+  
+  
+          <li class="">
+            <a href="/">Home</a>
+          </li>
+  
+
+  
+  
+          <li class="">
+            <a href="/committees.html">Committees</a>
+          </li>
+  
+
+  
+  
+          <li class="">
+            <a href="/terms.html">Terms</a>
+          </li>
+  
+
+  
+  
+          <li class="">
+            <a href="/program.html">Program</a>
+          </li>
+  
+
+  
+  
+          <li class="">
+            <a href="/hacks.html"><b>HACKS</b></a>
+          </li>
+  
+
+  
+  
+          <li class="">
+            <a href="/photos.html"><b>PHOTOS</b></a>
+          </li>
+  
+
+  
+  
+          <li class="">
+            <a href="/judging.html">Judging</a>
+          </li>
+  
+
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search" action="http://google.com/search" method="get">
+        <div class="form-group">
+
+          <input type="hidden" name="q" value="site:http://6th-ndn-hackathon.named-data.net">
+
+          <input type="text" name="q" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+
+        <aside id="sidebar" class="col-xs-8 col-sm-5 col-md-4 col-lg-3 pull-right">
+          <section id="sidebar-deadlines" class="well">
+ <h3><i class="fa fa-calendar"></i>&nbsp;Important Dates</h3>
+<ul id="deadlines" class="nav nav-list">
+
+  <li><p>Submission deadline:
+  
+  <br/><b style="margin-left: 20px"><del>April 27, 2018</del></b>
+  
+  </p></li>
+
+  <li><p>Acceptance notification:
+  
+  <br/><b style="margin-left: 20px"><del>May 4, 2018</del></b>
+  
+  </p></li>
+
+</ul>
+</section>
+
+        </aside><!--/span-->
+
+        <div id="main" class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
+          <article>
+ <header>
+   <h1>Accepted Hacks</h1>
+ </header>
+
+<section>
+  
+<ul id="markdown-toc">
+  <li><a href="#1-nfd-management-thread" id="markdown-toc-1-nfd-management-thread">1. NFD Management Thread</a>    <ul>
+      <li><a href="#slides" id="markdown-toc-slides">Slides</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-porting-psync-c-library-to-java" id="markdown-toc-2-porting-psync-c-library-to-java">2. Porting PSync C++ library to Java</a>    <ul>
+      <li><a href="#slides-1" id="markdown-toc-slides-1">Slides</a></li>
+    </ul>
+  </li>
+  <li><a href="#3-firefly-for-android" id="markdown-toc-3-firefly-for-android">3. <del>Firefly for Android</del></a></li>
+  <li><a href="#4-re-write-nfd-integration-tests-in-mini-ndn--create-a-gerrit-bot" id="markdown-toc-4-re-write-nfd-integration-tests-in-mini-ndn--create-a-gerrit-bot">4. <del>Re-write NFD integration tests in Mini-NDN &amp; create a gerrit bot</del></a></li>
+  <li><a href="#5-iot-security-bootstrapping-with-ndn" id="markdown-toc-5-iot-security-bootstrapping-with-ndn">5. IoT security bootstrapping with NDN</a>    <ul>
+      <li><a href="#slides-2" id="markdown-toc-slides-2">Slides</a></li>
+    </ul>
+  </li>
+  <li><a href="#6-whisperface-ndn-face-over-audio-channel" id="markdown-toc-6-whisperface-ndn-face-over-audio-channel">6. <del>Whisperface: NDN Face Over Audio Channel</del></a></li>
+  <li><a href="#7-implement-state-vector-sync-svs-and-apply-it-to-repo" id="markdown-toc-7-implement-state-vector-sync-svs-and-apply-it-to-repo">7. Implement State Vector Sync (SVS) and Apply It to Repo</a>    <ul>
+      <li><a href="#slides-3" id="markdown-toc-slides-3">Slides</a></li>
+    </ul>
+  </li>
+  <li><a href="#8-make-ndn-congestion-control-work-in-ndnsim" id="markdown-toc-8-make-ndn-congestion-control-work-in-ndnsim">8. Make NDN Congestion Control work in ndnSIM</a>    <ul>
+      <li><a href="#slides-4" id="markdown-toc-slides-4">Slides</a></li>
+    </ul>
+  </li>
+  <li><a href="#9-a-basic-forwarding-strategy-for-ad-hoc-networks-in-nfd" id="markdown-toc-9-a-basic-forwarding-strategy-for-ad-hoc-networks-in-nfd">9. A Basic Forwarding Strategy for Ad-hoc Networks in NFD</a>    <ul>
+      <li><a href="#slides-5" id="markdown-toc-slides-5">Slides</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1-nfd-management-thread">1. NFD Management Thread</h2>
+
+<h3 id="slides"><a href="/assets/1-NFD-Management-Thread-696aeca55ad38defc7d61802a84f75867d19fd63442982a2521524fc7c0a0c7b.pdf">Slides</a></h3>
+
+<p>Project Leads: Davide Pesavento, Junxiao Shi</p>
+
+<p><strong>Motivation and Problem Statement</strong></p>
+
+<ul>
+  <li>Management slows down NFD
+    <ul>
+      <li>The management module performs several costly operations in the same thread as forwarding.</li>
+      <li>Packet forwarding is completely stopped while management is doing this work.</li>
+    </ul>
+  </li>
+  <li>This project moves management to a new thread
+(https://redmine.named-data.net/issues/4528)
+    <ul>
+      <li>Heavy tasks run in the management thread, so they do not block forwarding.
+        <ul>
+          <li>We cannot make NFD data structures thread-safe in 12 hours, so we will use a lightweight global lock: all tables will be briefly locked while management accesses them.</li>
+        </ul>
+      </li>
+      <li>The new management thread and the existing RIB thread talk to NFD forwarding (main thread) via Unix stream faces. This should be changed to an in-memory shared ring buffer to avoid socket operations and packet encoding.
+(https://redmine.named-data.net/issues/4530)</li>
+      <li>Afterwards, RIB can be merged into the new management thread, so that FIB updates can be done directly via function calls instead of Command Interests.
+(https://redmine.named-data.net/issues/4529)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Tasks</strong></p>
+
+<ul>
+  <li>Data structure locking: Add a lightweight lock (a simple spinlock can be implemented with std::atomic_flag) to NFD’s data structures that are accessed by both forwarding and management. This includes FaceTable, FIB, StrategyChoice, and ContentStore.</li>
+  <li>Management thread separation: Create the management thread and move management protocol processing logic there.</li>
+  <li>More efficient communication between threads: NFD-RIB currently connects to NFD’s main thread through a Unix stream face, so communication involves socket operations and packet encoding. Since they are in the same process, they can instead communicate through an internal ““in-memory face”” implemented using a ring buffer or similar technique. Note that this can be applied to the new management thread in point 2 as well.</li>
+  <li>Merge NFD-RIB thread into management thread: NFD-RIB currently interacts with FIB through control commands. Since management is now in its own thread, NFD-RIB can be merged into the same management thread, and interact with FIB through direct function calls. This decreases the complexity of NFD-RIB and FIB management (for instance, add-nexthop and remove-nexthop commands can be eliminated).”</li>
+</ul>
+
+<p><strong>Required Knowledge for Participants</strong></p>
+
+<ul>
+  <li>C++</li>
+  <li>basic concepts of concurrency and thread synchronization</li>
+  <li>knowledge about NFD internals, especially management</li>
+</ul>
+
+<p><strong>Expected Outcomes</strong></p>
+
+<ul>
+  <li>Mainly, that NFD still works after these changes</li>
+  <li>NFD’s management protocol is now handled (mostly) in a separate thread and its impact on packet forwarding latency is greatly reduced</li>
+</ul>
+
+<hr />
+
+<h2 id="2-porting-psync-c-library-to-java">2. Porting PSync C++ library to Java</h2>
+
+<h3 id="slides-1"><a href="/assets/2-PSync_Java_Port-0fc68fffefa0d103dc3e8097e6d044f2fc0b6077b4b7828e46287cb638361539.pdf">Slides</a></h3>
+
+<p>Project Lead: Ashlesh Gawande</p>
+
+<p><strong>Motivation and Problem Statement</strong></p>
+
+<p><a href="https://named-data.net/publications/scalable_name-based_data_synchronization/">PSync</a> is an NDN sync protocol that supports full sync and parital sync. The aim of this hackathon project is to port the <a href="https://netwisdom.cs.memphis.edu/gitlab/mzhang4/psync">PSync C++ library</a> (alpha s/w) to Java. We also hope to get some feedback on how to make the C++ library better.</p>
+
+<p><strong>Tasks</strong></p>
+
+<ul>
+  <li>Come up with an API and write the Java implementation.</li>
+  <li>Design a simple Android application to demonstrate the library.</li>
+</ul>
+
+<p><strong>Required Knowledge for Participants</strong></p>
+
+<ul>
+  <li>PSync Protocol, Sync protocols in general</li>
+  <li>C++11, jNDN, Android NFD</li>
+</ul>
+
+<p><strong>Expected Outcomes</strong></p>
+
+<p>PSync Java library that is used by an Android application for partial/full sync.</p>
+
+<hr />
+
+<h2 id="3-firefly-for-android">3. <del>Firefly for Android</del></h2>
+
+<p>Project Lead: Jeff Thompson</p>
+
+<p><strong>Motivation and Problem Statement</strong></p>
+
+<p>Application developers need to focus on their NDN application, not implementing publisher mobility and data persistence. Firefly showed a solution in the browser using Google Firebase, with room for improvement.</p>
+
+<p><strong>Tasks</strong></p>
+
+<ul>
+  <li>Port the Firebase interface from JavaScript to Java (Android).</li>
+  <li>Develop demo Android app (simplified ChronoChat).</li>
+</ul>
+
+<p><strong>Required Knowledge for Participants</strong></p>
+
+<ul>
+  <li>JavaScript</li>
+  <li>Java</li>
+  <li>Bonus: Android app development</li>
+</ul>
+
+<p><strong>Expected Outcomes</strong></p>
+
+<ul>
+  <li>Client library FireflyFace available to Java and Android developers.</li>
+  <li>Demo app showing persistence/interoperability between an Android mobile and a laptop web app.</li>
+</ul>
+
+<hr />
+
+<h2 id="4-re-write-nfd-integration-tests-in-mini-ndn--create-a-gerrit-bot">4. <del>Re-write NFD integration tests in Mini-NDN &amp; create a gerrit bot</del></h2>
+
+<p>Project Leads: Ashlesh Gawande, Saurab Dulal</p>
+
+<p><strong>Motivation and Problem Statement</strong></p>
+
+<p><a href="https://gerrit.named-data.net/NFD/integration-tests">NFD integration tests</a> are used to make sure that NFD runs and works correctly in a real environment. But these are not executed on every change on gerrit. We aim to write all the tests in Mini-NDN and add a bot to post a comment on every NFD patch similar to NLSR intergation tests.</p>
+
+<p><strong>Contribution to NDN</strong></p>
+
+<p>Don’t have to wait for an NFD release change to find out if anything is broken in integration test. Anybody with low resources can run these tests on a single machine.</p>
+
+<p><strong>Tasks</strong></p>
+
+<ul>
+  <li>Re-write existing NFD integration tests in Mini-NDN</li>
+  <li>Modify NLSR gerrit bot to also test NFD changes</li>
+</ul>
+
+<p><strong>Required Knowledge for Participants</strong></p>
+
+<ul>
+  <li>NFD integration tests (bash scripts)</li>
+  <li>Mini-NDN</li>
+  <li>Gerrit</li>
+</ul>
+
+<p><strong>Expected Outcomes</strong></p>
+
+<p>Current NFD changes on gerrit receives verification comments from a bot running Mini-NDN integration tests.</p>
+
+<hr />
+
+<h2 id="5-iot-security-bootstrapping-with-ndn">5. IoT security bootstrapping with NDN</h2>
+
+<h3 id="slides-2"><a href="/assets/5-IoT-Bootstrapping-00b7d990d19bbc7dec9b900cdc361ab533b66d2cbc0f0fb7ddea9a6d64dffb16.pdf">Slides</a></h3>
+
+<p>Project Leads: Yanbiao Li, Zhiyi Zhang, Haitao Zhang</p>
+
+<p><strong>Motivation and Problem Statement</strong></p>
+
+<p>Enroll a new IoT device in your home network, such that it can securely communicate with all other devices in the same network with NDN</p>
+
+<p><strong>Contribution to NDN</strong></p>
+
+<p>The first step to NDNoT; May also be used in security setup of NDN Edges</p>
+
+<p><strong>Tasks</strong></p>
+
+<ul>
+  <li>Implement a Controller on android phone: scan QR code; distribute TrustAnchor; issue Certificate</li>
+  <li>Implement a Device on Raspberry Pi; initialize bootstrapping; generate key-pair and install Cert</li>
+</ul>
+
+<p><strong>Required Knowledge for Participants</strong></p>
+
+<ul>
+  <li>C/C++</li>
+  <li>ndn-cxx</li>
+  <li>NFD-android</li>
+  <li>jNDN</li>
+  <li>DH key exchange</li>
+  <li>public-key encryption/decryption</li>
+</ul>
+
+<p><strong>Expected Outcomes</strong></p>
+
+<ul>
+  <li>The implementation of Controller and Device</li>
+  <li>Use the Phone to bootstrap the device; then the device is able to communicate with the laptop</li>
+</ul>
+
+<hr />
+
+<h2 id="6-whisperface-ndn-face-over-audio-channel">6. <del>Whisperface: NDN Face Over Audio Channel</del></h2>
+
+<p>Project Lead: Alex Afanasyev</p>
+
+<p><strong>Motivation and Problem Statement</strong></p>
+
+<ul>
+  <li>New type of face for device-to-device communication</li>
+  <li>Expand ability for NDN communication to new devices/channels</li>
+</ul>
+
+<p><strong>Contribution to NDN</strong></p>
+
+<p>Enables simple low-rate device-to-device communication, without affecting existing connections</p>
+
+<p><strong>Tasks</strong></p>
+
+<ul>
+  <li>Discover library that can be used to realize low-rate over microphone/dynamics</li>
+</ul>
+
+<p><strong>Required Knowledge for Participants</strong></p>
+
+<ul>
+  <li>NFD</li>
+  <li>ndn-cxx</li>
+  <li>Android</li>
+  <li>Linux audio core</li>
+  <li>C++</li>
+  <li>Java</li>
+</ul>
+
+<p><strong>Expected Outcomes</strong></p>
+
+<ul>
+  <li>Draft of Linux and Android extensions for NFD</li>
+  <li>Simple app that communicates NDN over audio channel</li>
+</ul>
+
+<hr />
+
+<h2 id="7-implement-state-vector-sync-svs-and-apply-it-to-repo">7. Implement State Vector Sync (SVS) and Apply It to Repo</h2>
+
+<h3 id="slides-3"><a href="/assets/7-Implement-State-Vector-Sync-0912d549e678a1d2043a5f7fa1cb9ff3cdc665dfc6019fa497992b564e826c0f.pdf">Slides</a></h3>
+
+<p>Project Lead: Haitao Zhang</p>
+
+<p><strong>Motivation and Problem Statement</strong></p>
+
+<p>The current repo-ng does not replicate Data to different nodes. So we implement State Vector Sync, and make use of it to implement a distributed NDN Data repo</p>
+
+<p><strong>Contribution to NDN</strong></p>
+
+<p>Prove a State Vector Sync library and a distributed NDN Data repo</p>
+
+<p><strong>Tasks</strong></p>
+
+<ul>
+  <li>Implement the State Vector Sync library</li>
+  <li>Apply State Vector Sync to repo-ng</li>
+</ul>
+
+<p><strong>Required Knowledge for Participants</strong></p>
+
+<ul>
+  <li>C++</li>
+  <li>ndn-cxx</li>
+  <li>repo-ng</li>
+</ul>
+
+<p><strong>Expected Outcomes</strong></p>
+
+<ul>
+  <li>State Vector Sync library</li>
+  <li>A Distributed NDN Data Repo</li>
+</ul>
+
+<hr />
+
+<h2 id="8-make-ndn-congestion-control-work-in-ndnsim">8. Make NDN Congestion Control work in ndnSIM</h2>
+
+<h3 id="slides-4"><a href="/assets/8-ndnSIM-cc-018d83528facfe3c6db68dfbf1096e89b4aaad48d05e6bb4a88672f1e044e2fd.pdf">Slides</a></h3>
+
+<p>Project Leads: Md Ashiqur Rahman, Klaus Schneider</p>
+
+<p><strong>Motivation and Contribution to NDN</strong></p>
+
+<p>The current NFD congestion detection doesn’t work in ndnSIM, since ndnSIM doesn’t use regular TCP, UDP, or Unix faces. This project aims to fix this and evaluate the proper function of the implementation.</p>
+
+<p><strong>Tasks</strong></p>
+
+<ul>
+  <li>Implement a ns-3 Queue based on CoDel that detects congestion and inserts congestion marks.</li>
+  <li>Map these congestion marks onto NDNLP/ns-3 packets.</li>
+  <li>Implement a ndnSIM consumer application that reacts to the congestion marks.</li>
+</ul>
+
+<p><strong>Additional Tasks (if time)</strong></p>
+
+<ul>
+  <li>Start submitting the code to Gerrit.</li>
+  <li>Implement a TCP-Cubic like consumer app and compare it against the AIMD app.</li>
+</ul>
+
+<p><strong>Required Knowledge for Participants</strong></p>
+
+<ul>
+  <li>C++</li>
+  <li>NFD</li>
+  <li>ndnSIM</li>
+</ul>
+
+<hr />
+
+<h2 id="9-a-basic-forwarding-strategy-for-ad-hoc-networks-in-nfd">9. A Basic Forwarding Strategy for Ad-hoc Networks in NFD</h2>
+
+<h3 id="slides-5"><a href="/assets/9-ad-hoc-9b272aac912a8f27cf5d3c5fb7c640adeb83bb0aed12af396287f6f38cdb3a7f.pdf">Slides</a></h3>
+
+<p>Project Lead: Teng Liang</p>
+
+<p><strong>Motivation and Problem Statement</strong></p>
+
+<p>The current NFD considers little of ad-hoc networks and does not have a forwarding strategy for ad-hoc networks</p>
+
+<p><strong>Contribution to NDN</strong></p>
+
+<ul>
+  <li>Add a forwarding strategy for ad-hoc networks as a baseline to NFD (and ndnSIM)</li>
+  <li>Understand how to adapt NFD to ad-hoc networks (necessary changes to forwarder pipelines)</li>
+</ul>
+
+<p><strong>Tasks</strong></p>
+
+<ul>
+  <li>Implement a basic forwarding strategy in NFD and evaluate it in ndnSIM</li>
+</ul>
+
+<p><strong>Required Knowledge for Participants</strong></p>
+
+<ul>
+  <li>C++</li>
+  <li>NFD/ndn-cxx</li>
+  <li>ndnSIM</li>
+</ul>
+
+<p><strong>Expected Outcomes</strong></p>
+
+<ul>
+  <li>A forwarding strategy in NFD and basic evaluation results</li>
+  <li>Lessens on how to adapt NFD to ad-hoc networks and evaluation results</li>
+</ul>
+
+</section>
+
+<footer>
+</footer>
+</article>
+
+        </div>
+
+        <aside id="sidebar" class="col-xs-8 col-sm-5 col-md-4 col-lg-3">
+          <section id="sidebar-github" class="well hidden-print">
+  <h3><a style="color:black" href="https://github.com/6th-ndn-hackathon" target="_blank"><i class="fa fa-github"></i></a>&nbsp;Hackathon Repositories</h3>
+  <ul id="github-repo" class="nav nav-list"><li><p>Reading github repositories...</p></li></ul>
+</section>
+
+<section id="sidebar-twitter" class="well hidden-print">
+ <h3><i class="fa fa-twitter"></i>&nbsp;Tweets</h3>
+ <a href="https://twitter.com/NamedData"
+   class="twitter-follow-button"
+   data-dnt="true"
+   data-lang="en"
+   data-show-count="false"
+   data-show-screen-name="true"
+ >Follow @NamedData</a>
+ <a class="twitter-timeline" href="https://twitter.com/NamedData"
+   data-widget-id="698294519054278656" data-chrome="transparent noheader">Tweets by @NamedData</a>
+</section>
+
+
+        </aside><!--/span-->
+
+      </div><!--/row-->
+    </div> <!-- /container -->
+
+    <hr>
+
+    <footer id="footer">
+      <p class="pull-right hidden-print"><a href="#">Back to top</a></p>
+<p>Copyright &copy; 2018, 6th NDN Hackathon Organizing Committee</p>
+
+    </footer>
+
+    <script src="/assets/site-2a638db51985df5bf34d04190081e85e44d147be93fe09c9f7d67b3731bd9777.js" integrity="sha256-KmONtRmF31vzTQQZAIHoXkTRR76T/gnJ99Z7NzG9l3c=" crossorigin="anonymous" type="text/javascript"></script>
+  </body>
+</html>
