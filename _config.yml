@@ -45,12 +45,12 @@ navbar_list:
     link: /terms.html
   - name: <b>HACKS</b>
     link: /hacks.html
- # - name: Call for Hacks
- #   link: /cfh.html
   - name: Program
     link: /program.html
   - name: Judging
     link: /judging.html
+ # - name: Call for Hacks
+ #   link: /cfh.html
 
 # - name: Call for Hack Proposals
 #   link: /cfh.html
